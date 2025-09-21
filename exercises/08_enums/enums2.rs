@@ -7,12 +7,8 @@ struct Point {
 #[derive(Debug)]
 enum Message {
     // TODO: Define the different variants used below.
-    Resize(
-        struct Resize{
-        width: i32,
-        height: i32,
-        }
-    ),
+    // The first time I defined the Resize struct above.
+    Resize { width: u64, height: u64 },
     Move(Point),
     Echo(String),
     ChangeColor(u8, u8, u8),
